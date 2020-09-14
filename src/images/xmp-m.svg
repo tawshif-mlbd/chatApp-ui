@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31.5 36">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #5d5386;
+        font-family: Kefa-Regular, Kefa;
+      }
+
+      .cls-1 {
+        font-size: 26px;
+      }
+
+      .cls-2 {
+        font-size: 22px;
+      }
+
+      .cls-3 {
+        filter: url(#e);
+      }
+
+      .cls-4 {
+        filter: url(#X);
+      }
+    </style>
+    <filter id="X" x="0" y="0" width="24" height="36" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-color="#5d5386" flood-opacity="0.294"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="e" x="16.5" y="5.5" width="15" height="28" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-2"/>
+      <feFlood flood-color="#5d5386" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2" data-name="Group 2" transform="translate(-754 -390)">
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, 754, 390)">
+      <text id="X-2" data-name="X" class="cls-1" transform="translate(2 27)"><tspan x="0" y="0">X</tspan></text>
+    </g>
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 754, 390)">
+      <text id="e-2" data-name="e" class="cls-2" transform="translate(18 26)"><tspan x="0" y="0">e</tspan></text>
+    </g>
+  </g>
+</svg>

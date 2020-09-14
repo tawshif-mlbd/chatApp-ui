@@ -55,7 +55,7 @@ const config = function(env, args) {
           use: [
             {
               loader: 'url-loader',
-              options: { name: 'images/design/[name].[hash:6].[ext]', publicPath: '../', limit: 8192 },
+              options: { name: 'images/[name].[hash:6].[ext]', publicPath: '../', limit: 8192 },
             },
           ],
         },
@@ -121,8 +121,8 @@ const config = function(env, args) {
       new CopyWebpackPlugin({
         patterns: [
           {
-            from: path.resolve(__dirname, 'src', 'images', 'content'),
-            to: path.resolve(__dirname, 'dist', 'images', 'content'),
+            from: path.resolve(__dirname, 'src', 'images'),
+            to: path.resolve(__dirname, 'dist', 'images'),
             toType: 'dir',
           },
         ],

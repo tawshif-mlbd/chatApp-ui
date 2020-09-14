@@ -1,0 +1,8 @@
+@import "cards";
+
+
+.btn {
+  &:focus {
+    box-shadow: none;
+  }
+}

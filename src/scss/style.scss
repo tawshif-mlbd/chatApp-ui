@@ -1,0 +1,28 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+//Custom Variables
+@import "variables";
+
+
+//Required Bootstrap
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+//Optional
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+
+// Required line awesome
+
+@import "~line-awesome/dist/line-awesome/scss/line-awesome";
+
+
+
+// Customized Theme
+@import "theme";
+

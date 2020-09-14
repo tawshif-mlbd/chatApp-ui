@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 286 62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(0,0,0,0);
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3, .cls-4 {
+        fill: #5d5386;
+        font-family: Kefa-Regular, Kefa;
+      }
+
+      .cls-3 {
+        font-size: 53px;
+      }
+
+      .cls-4 {
+        font-size: 84px;
+      }
+
+      .cls-5 {
+        filter: url(#X);
+      }
+
+      .cls-6 {
+        filter: url(#enomorph);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" width="286" height="62" transform="translate(1025 636)"/>
+    </clipPath>
+    <filter id="enomorph" x="41.279" y="-9.962" width="251" height="70" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-color="#5d5386" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="X" x="-4.5" y="-22.5" width="67" height="106" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-2"/>
+      <feFlood flood-color="#5d5386" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" class="cls-2" transform="translate(-1025 -636)">
+    <g id="Group_1" data-name="Group 1" transform="translate(126 304)">
+      <g class="cls-6" transform="matrix(1, 0, 0, 1, 899, 332)">
+        <text id="enomorph-2" data-name="enomorph" class="cls-3" transform="translate(44.78 42.54)"><tspan x="0" y="0">enomorph</tspan></text>
+      </g>
+      <g class="cls-5" transform="matrix(1, 0, 0, 1, 899, 332)">
+        <text id="X-2" data-name="X" class="cls-4" transform="translate(0 59)"><tspan x="0" y="0">X</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

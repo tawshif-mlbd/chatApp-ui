@@ -1,39 +1,4 @@
-# Webpack 4 Boilerplate
-
-![Maintenance](https://img.shields.io/maintenance/yes/2020?logo=github)
-![webpack-current](https://img.shields.io/badge/webpack-v4.44.1-green?logo=webpack)
-![node-current (scoped)](https://img.shields.io/node/v/@weareathlon/frontend-webpack-boilerplate)
-[![Build Status](https://api.travis-ci.org/weareathlon/frontend-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/weareathlon/frontend-webpack-boilerplate)
-[![GitHub Issues](https://img.shields.io/github/issues-raw/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues)
-[![Known Vulnerabilities](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/WeAreAthlon/frontend-webpack-boilerplate?targetFile=package.json)
-[![Dependency Status](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate) 
-[![devDependency Status](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate/dev-status.svg)](https://david-dm.org/WeAreAthlon/frontend-webpack-boilerplate?type=dev)
-[![npm](https://img.shields.io/npm/dm/@weareathlon/frontend-webpack-boilerplate)](https://www.npmjs.com/package/@weareathlon/frontend-webpack-boilerplate)
-[![GitHub License](https://img.shields.io/github/license/WeAreAthlon/frontend-webpack-boilerplate)](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/blob/master/LICENSE)
-
-![Front-end Webpack Boilerplate](https://repository-images.githubusercontent.com/96102257/4be7b600-61f1-11e9-9ebf-67b17d5ba125)
-
-## Features
-
-* **Simple setup** instructions
-  * Start development of a project right away with *simple*, *configured*, *browser synced*, *linter monitored* asset files.
-* Integration with [Travis CI](https://travis-ci.org/)
-  * [Demo deployment available to github pages](https://weareathlon.github.io/frontend-webpack-boilerplate/)
-* Example assets directory for reference and **demo** building of:
-  * *JavaScript*
-  * *SASS*
-  * *Images*
-  * *Fonts*
-* Support for **assets optimization** for production:
-  * **Minification** of *JavaScript* and *CSS* files.
-  * **Inline** **images** / **fonts** files having file size below a *configurable* threshold value.
-* Code style and formatting **linters** configuration and setup for:
-  * *SASS*
-  * *JavaScript*
-* Latest [Webpack 4](https://github.com/webpack/webpack) - *JavaScript* module bundler.
-* Latest [SASS/CSS](https://github.com/sass/node-sass) compiler based on `node-sass` which provides bindings to `libsass`.
-* Latest [Babel 7](https://github.com/babel/babel) (`@babel/core`) - JavaScript compiler - _Use next generation JavaScript, today._
-* Configured and ready to use **BrowserSync** plugin - `browser-sync-webpack-plugin`
+# Chat App Design 
 
 ## Requirements
 
@@ -186,9 +151,3 @@ $ npm run lint-sass
 ```sh
 $ npm run lint-js
 ```
-
-## Continuous Integration
-
-This boilerplate template contains integration with [Travis CI](https://travis-ci.org/). The build system runs all linting scripts and deploys production optimized pages to _GitHub_ pages upon push to the `master` branch. However, note that this deployment flow only works for _Project Pages_, as User and Organization pages [only support the master branch flow](https://help.github.com/articles/user-organization-and-project-pages/).
-
-For more information on how to set up alternative deployment processes, check out the [Travis CI documentation on deployment](https://docs.travis-ci.com/user/deployment). The service can deploy to dozens of cloud providers, including Heroku, AWS, and Firebase.

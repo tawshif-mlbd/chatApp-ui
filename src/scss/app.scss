@@ -1,60 +1,54 @@
-/* By Athlon Front-End Team */
+//Required Bootstrap
 
-/* Core variables */
-@import 'base/vars';
+@import "~bootstrap/scss/functions";
 
-/* CSS Reset */
-@import 'base/reset';
+//Custom Variables
+@import "variables";
 
-/* CSS print */
-@import 'base/print';
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
 
-/* Fonts */
-@import 'base/fonts';
+//Optional
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
 
-/* Mixins, helpers and functions */
-@import 'base/mixins';
-
-/* Vendor */
-
-/* Components */
+// line Awesome
+@import "~line-awesome/dist/line-awesome/scss/line-awesome";
 
 /* Browser specific styles */
 @import 'dirty/hacks';
 
-/* Demo styles */
+// Customized Theme
+@import "theme";
 
-body {
-  background: $body-background-color;
-  color: $foreground-color;
-  font-family: 'DINP-R', arial, serif;
-}
-
-header {
-  font-size: 2em;
-  margin: 20px;
-  color: $caption-color;
-  text-align: center;
-  background: $foreground-color url('../images/design/heading.png') center 20px no-repeat;
-  padding: 60px 30px 30px;
-  background-size: 160px;
-}
-
-main {
-  color: $foreground-color;
-  text-align: center;
-  padding: 10px;
-}
-
-a {
-  color: $link-color;
-}
-
-address {
-  color: $accent-color;
-}
-
-.logo {
-  margin: 0 auto;
-  display: block;
-}

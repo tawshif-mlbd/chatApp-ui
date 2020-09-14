@@ -5,13 +5,628 @@
     <title>Athlon / Front-end Boilerplate Template</title>
   </head>
   <body>
-    <header>
-      Hello, world!
-      <img src="images/content/logoa.svg" alt="Logo of Athlon" class="logo">
+
+    <header class="header">
+      <nav class="navbar fixed-top">
+
+        <!-- Begin Search Box-->
+        <div class="search-box" id="search-box" role="searchbox">
+          <button class="dismiss"
+                  data-target="#search-box"
+                  data-toggle="collapse"
+                  aria-controls="#search-box" aria-expanded="true" ><i class="las la-times"></i></button>
+          <form id="searchForm" action="#" role="search">
+            <input type="search" placeholder="Search something ..." class="form-control">
+          </form>
+        </div>
+        <!-- End Search Box-->
+
+        <!-- Begin Topbar -->
+        <div class="navbar-holder">
+          <!-- Begin Logo -->
+          <div class="navbar-header">
+            <a href="index.html" class="navbar-brand">
+              <div class="brand-image brand-big">
+                <img src="images/xmp.svg" alt="logo" class="logo-big">
+              </div>
+              <div class="brand-image brand-small">
+                <img src="images/xmp-m.svg" alt="logo" class="logo-small">
+              </div>
+            </a>
+            <!-- Toggle Button -->
+            <a id="toggle-btn" href="#" class="menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+            <!-- End Toggle -->
+          </div>
+          <!-- End Logo -->
+
+          <!-- Begin Navbar Menu -->
+          <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center pull-right m-0">
+
+            <!-- Search -->
+            <li class="nav-item d-flex align-items-center">
+              <a id="search" href="#" class="nav-link"
+                 data-target="#search-box"
+                 aria-controls="#search-box"
+                 data-toggle="collapse" aria-expanded="false"><i class="las la-search"></i></a>
+            </li>
+            <!-- End Search -->
+
+            <!-- Begin Notifications -->
+            <li class="nav-item dropdown pr-2">
+              <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link">
+                <i class="las la-bell animated infinite swing"></i><span class="badge-pulse"></span>
+              </a>
+              <ul aria-labelledby="notifications" class="dropdown-menu notification">
+                <li>
+                  <div class="notification-top">Notifications ( <span>5</span> )</div>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="notification-icon">
+                      <i class="las la-user"></i>
+                    </div>
+                    <div class="notification-body">
+                      <div class="notification-body-heading">
+                        New Customer Joined
+                      </div>
+                      <span class="time">15 min's ago</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="notification-icon">
+                      <i class="las la-calendar-check-o"></i>
+                    </div>
+                    <div class="notification-body">
+                      <div class="notification-body-heading">
+                        New event
+                      </div>
+                      <span class="time">2 hours ago</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="notification-icon">
+                      <i class="las la-history"></i>
+                    </div>
+                    <div class="notification-body">
+                      <div class="notification-body-heading">
+                        Next appoinment
+                      </div>
+                      <span class="time">3 hours ago</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="notification-icon">
+                      <i class="las la-twitter"></i>
+                    </div>
+                    <div class="notification-body">
+                      <div class="notification-body-heading">
+                        You have 3 new followers
+                      </div>
+                      <span class="time">10 hours ago</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="notification-all">View All</a>
+                </li>
+              </ul>
+            </li>
+            <!-- End Notifications -->
+
+            <!-- User -->
+            <li class="nav-item dropdown">
+              <a id="user" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="user">
+                <img src="images/avatar-01.jpg" alt="..." class="avatar rounded-circle">
+                <span class="name">Tawshif Ahsan Khan</span>
+                <i class="las la-angle-down"></i>
+              </a>
+              <ul aria-labelledby="user" class="user-details dropdown-menu">
+                <li class="welcome">
+                  <img src="images/avatar-01.jpg" alt="***" class="rounded-circle">
+                  <span class="info">
+                    <span class="name">Tawshif Ahsan Khan</span>
+                    <span class="mail">anikphp@gmail.com</span>
+                  </span>
+                </li>
+                <div class="separator"></div>
+                <li>
+                  <a href="pages-profile.html" class="dropdown-item">
+                    <span class="las la-male"></span>
+                    Profile
+                  </a>
+                </li>
+                <li>
+                  <a href="app-mail.html" class="dropdown-item">
+                    <span class="las la-envelope"></span>
+                    Messages
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">
+                    <span class="las la-cog"></span>
+                    Account Settings
+                  </a>
+                </li>
+                <div class="separator"></div>
+                <li>
+                  <a href="pages-faq.html" class="dropdown-item">
+                    <span class="las la-power-off"></span>
+                    Signout
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- End User -->
+
+          </ul>
+          <!-- End Navbar Menu -->
+        </div>
+        <!-- End Topbar -->
+
+      </nav>
+
     </header>
-    <main>
-      <p>Demo page illustrating building SASS, JS, Fonts, Background Images and Inline Images.</p>
-      <address>Documentation avaialable on the official <a href="https://github.com/WeAreAthlon/frontend-webpack-boilerplate/" target="_blank">GitHub Repository</a>.</address>
+
+    <aside class="sidebar">
+      <!-- Begin Side Navbar -->
+      <nav class="side-navbar" id="side-nav">
+        <!-- Begin Main Navigation -->
+        <ul class="list-unstyled">
+          <li><a href="#dropdown-db" aria-expanded="false" data-toggle="collapse"><i class="las la-columns"></i><span>Dashboard</span></a>
+            <ul id="dropdown-db" class="collapse list-unstyled pt-0" data-parent="#side-nav">
+              <li><a href="db-default.html">Default</a></li>
+              <li><a href="db-compact.html">Compact</a></li>
+              <li><a href="db-modern.html">Modern</a></li>
+              <li><a href="db-social.html">Social</a></li>
+              <li><a href="db-all.html">All</a></li>
+            </ul>
+          </li>
+          <li><a href="#dropdown-app" aria-expanded="true" data-toggle="collapse"><i class="las la-puzzle-piece"></i><span>Applications</span></a>
+            <ul id="dropdown-app" class="list-unstyled pt-0" data-parent="#side-nav">
+              <li><a href="app-calendar.html">Calendar</a></li>
+              <li><a href="app-chat.html">Chat</a></li>
+              <li><a href="app-mail.html">Mail</a></li>
+              <li><a href="app-contact.html">Contact</a></li>
+            </ul>
+          </li>
+          <li><a href="components-widgets.html"><i class="las la-spinner"></i><span>Widgets</span></a></li>
+        </ul>
+        <span class="heading">Components</span>
+        <ul class="list-unstyled">
+          <li><a href="#dropdown-ui" aria-expanded="false" data-toggle="collapse"><i class="las la-share-alt"></i><span>UI Elements</span></a>
+            <ul id="dropdown-ui" class="collapse list-unstyled pt-0" data-parent="#side-nav">
+              <li><a href="components-buttons.html">Buttons</a></li>
+              <li><a href="components-alerts.html">Alerts</a></li>
+              <li><a href="components-modal.html">Modal</a></li>
+              <li><a href="components-notifications.html">Noty</a></li>
+              <li><a href="components-timeline.html">Timeline</a></li>
+              <li><a href="components-progress.html">Progress</a></li>
+              <li><a href="components-tabs.html">Tabs</a></li>
+              <li><a href="components-charts.html">Chart Js</a></li>
+              <li><a href="components-accordion.html">Accordion</a></li>
+              <li><a href="components-popover.html">Popover</a></li>
+              <li><a href="components-tooltip.html">Tooltip</a></li>
+              <li><a href="components-scrollable.html">Scrollable</a></li>
+            </ul>
+          </li>
+          <li><a href="#dropdown-icons" aria-expanded="false" data-toggle="collapse"><i class="las la-font"></i><span>Icons</span></a>
+            <ul id="dropdown-icons" class="collapse list-unstyled pt-0" data-parent="#side-nav">
+              <li><a href="icons-lineawesome.html">Line Awesome</a></li>
+              <li><a href="icons-themify.html">Themify</a></li>
+              <li><a href="icons-ionicons.html">Ionicons</a></li>
+              <li><a href="icons-meteocons.html">Meteocons</a></li>
+            </ul>
+          </li>
+          <li><a href="#dropdown-forms" aria-expanded="false" data-toggle="collapse"><i class="las la-list-alt"></i><span>Forms</span></a>
+            <ul id="dropdown-forms" class="collapse list-unstyled pt-0" data-parent="#side-nav">
+              <li><a href="forms-basic.html">Form Basic</a></li>
+              <li><a href="forms-validation.html">Form Validation</a></li>
+              <li><a href="forms-wizard.html">Form Wizard</a></li>
+              <li><a href="forms-select.html">Bootstrap Select</a></li>
+            </ul>
+          </li>
+          <li><a href="#dropdown-tables" aria-expanded="false" data-toggle="collapse"><i class="las la-th-large"></i><span>Tables</span></a>
+            <ul id="dropdown-tables" class="collapse list-unstyled pt-0" data-parent="#side-nav">
+              <li><a class="active" href="tables-basic.html">Basic</a></li>
+              <li><a href="tables-datatables.html">Datatables</a></li>
+            </ul>
+          </li>
+          <li><a href="maps-leaflet.html"><i class="las la-map"></i><span>Maps</span></a></li>
+        </ul>
+
+        <!-- End Main Navigation -->
+      </nav>
+      <!-- End Side Navbar -->
+      <!-- End Left Sidebar -->
+    </aside>
+
+    <main class="main-container">
+
+      <div class="chat-app">
+
+        <div class="root-item-list">
+          <div class="list-top">
+            <h4><i class="lar la-compass"></i> Work space name</h4>
+            <button class="btn" type="button" id="workspace" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="las la-ellipsis-v"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="workspace" >
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">secondary</a>
+              <a class="dropdown-item" href="#">Something</a>
+            </div>
+          </div>
+
+          <div class="fixed-items">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Find or invite people">
+            </div>
+            <h5 class="heading">Primary</h5>
+
+            <ul class="list-unstyled item-list">
+              <li><a href="#"><i class="las la-comment-dots"></i> All unread</a></li>
+              <li><a href="#"><i class="las la-at"></i> All Mentions</a></li>
+              <li><a href="#"><i class="las la-bookmark"></i> Saved Items</a></li>
+              <li><a href="#"><i class="las la-star"></i> Starer Items</a></li>
+              <li><a href="#"><i class="las la-plus-square"></i> Add Custom</a></li>
+            </ul>
+
+            <div class="group">
+              <div class="group-name">
+                <button class="btn coll-ctrl" type="button" data-toggle="collapse" data-target="#gp1" aria-expanded="true"></button>
+                <span class="name">Group</span>
+                <button class="btn btn-add"><i class="las la-plus"></i></button>
+              </div>
+              <div class="collapse show" id="gp1">
+                <ul class="list-unstyled item-list">
+                  <li><a href="#"><i class="las la-hashtag"></i> Office project</a></li>
+                  <li><a href="#"><i class="las la-hashtag"></i> Games</a></li>
+                  <li><a href="#"><i class="las la-hashtag"></i> Random</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="group">
+              <div class="group-name">
+                <button class="btn coll-ctrl" type="button" data-toggle="collapse" data-target="#gp2" aria-expanded="true"></button>
+                <span class="name">People</span>
+                <button class="btn btn-add"><i class="las la-plus"></i></button>
+              </div>
+              <div class="collapse show" id="gp2">
+                <ul class="list-unstyled item-list">
+                  <li><a href="#" class="online"><i class="las la-circle"></i> Mustofa kamal</a></li>
+                  <li><a href="#"><i class="las la-circle"></i> Your self</a></li>
+                  <li><a href="#"><i class="las la-circle"></i> Hasan</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="chatBox">
+
+
+          <div class="chatBox-top">
+            <div class="about">
+              <h6>
+                <i class="las la-hashtag"></i> Moin
+                <small class="status online">Available</small>
+              </h6>
+              <p>
+                Direct Chat
+                <span>·</span>
+                <a href="#">0</a> Pined item
+                <span>·</span>
+                <a href="#">20</a> members
+                <span>·</span>
+                <a href="#">More ...</a>
+              </p>
+            </div>
+            <div class="action">
+              <button class="btn"><i class="las la-headset"></i></button>
+              <button class="btn"><i class="las la-sliders-h"></i></button>
+            </div>
+          </div>
+
+
+          <div class="chatBox-chat-area">
+
+            <div class="msg">
+              <div class="msg-avatar">
+                <img src="images/avatar-01.jpg" alt="avater">
+              </div>
+              <div class="msg-details">
+                <div class="basic-id">
+                  <strong>Tawshif</strong>
+                  <span class="time-stamp">05:00pm</span>
+                </div>
+                <p class="msg-details-text">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquid cumque ea enim esse, hic inventore molestiae molestias nisi nobis odio placeat quasi quibusdam quisquam soluta, tempore, totam velit.</p>
+              </div>
+            </div>
+            <div class="msg">
+              <div class="msg-avatar">
+                <img src="images/avatars/av1.png" alt="avater">
+              </div>
+              <div class="msg-details">
+                <div class="basic-id">
+                  <strong>Moin</strong>
+                  <span class="time-stamp">05:00pm</span>
+                </div>
+                <p class="msg-details-text"> quibusdam quisquam soluta, tempore, totam velit.</p>
+              </div>
+            </div>
+            <div class="msg">
+              <div class="msg-avatar">
+                <img src="images/avatar-01.jpg" alt="avater">
+              </div>
+              <div class="msg-details">
+                <div class="basic-id">
+                  <strong>Tawshif</strong>
+                  <span class="time-stamp">05:00pm</span>
+                </div>
+                <p class="msg-details-text"> quibusdam quisquam soluta, tempore, totam velit.</p>
+              </div>
+            </div>
+            <div class="msg">
+              <div class="msg-avatar">
+                <img src="images/avatars/av1.png" alt="avater">
+              </div>
+              <div class="msg-details">
+                <div class="basic-id">
+                  <strong>Moin</strong>
+                  <span class="time-stamp">05:00pm</span>
+                </div>
+                <p class="msg-details-text">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquid cumque ea enim esse, hic inventore molestiae molestias nisi nobis odio placeat quasi quibusdam quisquam soluta, tempore, totam velit.</p>
+              </div>
+            </div>
+            <div class="msg">
+              <div class="msg-avatar">
+                <img src="images/avatar-01.jpg" alt="avater">
+              </div>
+              <div class="msg-details">
+                <div class="basic-id">
+                  <strong>Tawshif</strong>
+                  <span class="time-stamp">05:00pm</span>
+                </div>
+                <p class="msg-details-text"> quibusdam quisquam soluta, tempore, totam velit.</p>
+              </div>
+            </div>
+            <div class="msg">
+              <div class="msg-avatar">
+                <img src="images/avatars/av1.png" alt="avater">
+              </div>
+              <div class="msg-details">
+                <div class="basic-id">
+                  <strong>Moin</strong>
+                  <span class="time-stamp">05:00pm</span>
+                </div>
+                <p class="msg-details-text">Lorem ipsum dolor sit amic inventore molestiae molestias nisi nobis odio placeat quasi quibusdam quisquam soluta, tempore, totam velit.</p>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="chatBox-input">
+            <form action="chat-app.html">
+              <div class="form-group">
+                <input type="text" placeholder="Write message" class="chat-input">
+                <button class="chat-input-btn" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+
+
+        </div>
+
+        <div class="page-control">
+<!--          <div class="contacts-search">-->
+<!--            <form>-->
+<!--              <div class="input-area">-->
+<!--                <i class="las la-search"></i>-->
+<!--                <input type="text" placeholder="Search contact" class="input">-->
+<!--              </div>-->
+<!--            </form>-->
+<!--          </div>-->
+
+          <div class="basi-details">
+            <h6>Details</h6>
+            <p><i class="las la-hashtag"></i> random</p>
+          </div>
+
+          <div class="basic-action">
+            <button class="btn">
+              <i class="las la-folder-plus"></i>
+              <span>Add</span>
+            </button>
+            <button class="btn">
+              <i class="las la-phone-volume"></i>
+              <span>Call</span>
+            </button>
+            <button class="btn dropdown-toggle" type="button" id="moreDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="las la-bars"></i>
+              <span>More</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="moreDrop" >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+          </div>
+
+          <div class="accordion" id="chat-info">
+            <div class="acc-content">
+              <h4 id="heading-1">
+                <a class="btn collapsed" data-toggle="collapse" href="#clp-1" role="button" aria-expanded="false" aria-controls="collapseOne">About</a>
+              </h4>
+              <div id="clp-1" class="collapse" aria-labelledby="heading-1" data-parent="#chat-info">
+              <div class="description">
+                <h6>Topic :</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sint tempore vel! </p>
+                <h6>Description :</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sint tempore vel!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus sint tempore vel!
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="acc-content">
+              <h4 id="heading-2">
+                <a class="btn collapsed" data-toggle="collapse" href="#clp-2" role="button" aria-expanded="false" aria-controls="collapseOne">
+                  Member in the group
+                  <span class="count">10</span>
+                </a>
+              </h4>
+              <div id="clp-2" class="collapse" aria-labelledby="heading-2" data-parent="#chat-info">
+              <ul class="contacts-list">
+                <li>
+                  <a href="#" class="contact-person online">
+                    <span class="indicator"></span>
+                    <span class="contact-person-avatar">
+                    <img src="images/avatars/av2.jpeg" alt="Contact">
+                  </span>
+                    <span class="contact-person-information">
+                    <h5 class="name">Tawshif Ahsan Khan</h5>
+                    <p class="short-msg">Short message description of one line ...</p>
+                  </span>
+                    <span class="contact-person-notification">
+                    <span class="time">09:15am</span>
+                    <span class="notification">4</span>
+                  </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="contact-person online new">
+                    <span class="indicator"></span>
+                    <span class="contact-person-avatar">
+                    <img src="images/avatars/av3.png" alt="Contact">
+                  </span>
+                    <span class="contact-person-information">
+                    <h5 class="name">Tawshif Ahsan Khan</h5>
+                    <p class="short-msg">Short message description of one line ...</p>
+                  </span>
+                    <span class="contact-person-notification">
+                    <span class="time">09:15am</span>
+                    <span class="notification">82</span>
+                  </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="contact-person online">
+                    <span class="indicator"></span>
+                    <span class="contact-person-avatar">
+                    <img src="images/avatars/av3.png" alt="Contact">
+                  </span>
+                    <span class="contact-person-information">
+                    <h5 class="name">Tawshif Ahsan Khan</h5>
+                    <p class="short-msg">Short message description of one line ...</p>
+                  </span>
+                    <span class="contact-person-notification">
+                    <span class="time">09:15am</span>
+                  </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="contact-person online">
+                    <span class="indicator"></span>
+                    <span class="contact-person-avatar">
+                    <img src="images/avatars/av2.jpeg" alt="Contact">
+                  </span>
+                    <span class="contact-person-information">
+                    <h5 class="name">Tawshif Ahsan Khan</h5>
+                    <p class="short-msg">Short message description of one line ...</p>
+                  </span>
+                    <span class="contact-person-notification">
+                    <span class="time">09:15am</span>
+                  </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="contact-person new">
+                    <span class="indicator"></span>
+                    <span class="contact-person-avatar">
+                    <img src="images/avatars/av3.png" alt="Contact">
+                  </span>
+                    <span class="contact-person-information">
+                    <h5 class="name">Tawshif Ahsan Khan</h5>
+                    <p class="short-msg">Short message description of one line ...</p>
+                  </span>
+                    <span class="contact-person-notification">
+                    <span class="time">09:15am</span>
+                  </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="contact-person">
+                    <span class="indicator"></span>
+                    <span class="contact-person-avatar">
+                    <img src="images/avatars/av3.png" alt="Contact">
+                  </span>
+                    <span class="contact-person-information">
+                    <h5 class="name">Tawshif Ahsan Khan</h5>
+                    <p class="short-msg">Short message description of one line ...</p>
+                  </span>
+                    <span class="contact-person-notification">
+                    <span class="time">09:15am</span>
+                    <span class="notification">82</span>
+                  </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            </div>
+            <div class="acc-content">
+              <h4 id="heading-3">
+                <a class="btn collapsed" data-toggle="collapse" href="#clp-3" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                  Files
+                  <span class="count">00</span>
+                </a>
+              </h4>
+              <div id="clp-3" class="collapse" aria-labelledby="heading-3" data-parent="#chat-info">
+
+              </div>
+            </div>
+            <div class="acc-content">
+              <h4 id="heading-4">
+                <a class="btn collapsed" data-toggle="collapse" href="#clp-4" role="button" aria-expanded="false" aria-controls="collapseThree">
+                  Pinned Items
+                  <span class="count">00</span>
+                </a>
+              </h4>
+              <div id="clp-4" class="collapse" aria-labelledby="heading-4" data-parent="#chat-info">
+                <div class="p-4">
+                  lorem ipsome hhi
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
     </main>
+
+    <footer id="footer">
+
+    </footer>
+
   </body>
 </html>

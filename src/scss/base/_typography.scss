@@ -1,0 +1,42 @@
+//$font-name: 'AvenirNext';
+
+$font-name: 'Montserrat', sans-serif;
+$fail-back:"Helvetica Neue",sans-serif;
+
+
+//@font-face {
+//  font-family: $font-name;
+//  font-style: normal;
+//  font-weight: 300;
+//  src: url(/src/fonts/AvenirNext-UltraLight.ttf) format('ttf');
+//}
+//
+//@font-face {
+//  font-family: $font-name;
+//  font-style: normal;
+//  font-weight: 400;
+//  src: url(/src/fonts/AvenirNext-Medium.ttf) format('ttf');
+//}
+//
+//@font-face {
+//  font-family: $font-name;
+//  font-style: normal;
+//  font-weight: 500;
+//  src: url(/src/fonts/AvenirNext-Bold.ttf) format('ttf');
+//}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  //font-family: #{$font-name}, sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-variant-ligatures: common-ligatures;
+  font-variant-ligatures: common-ligatures;
+  font-size: 16px;
+}
